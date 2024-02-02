@@ -1,0 +1,3 @@
+nitrogen --restore & 
+jgmenu --at-pointer &
+tint2

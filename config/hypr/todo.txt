@@ -1,0 +1,9 @@
+# TODO
+- Configure Waybar
+- Color scheme
+- Configure mouse mode
+- Configure vim-like floating bindings
+- Configure vim-like normal bindings -> Problem: Either floating or tiling not working when trying to move window (Right, Down)
+- Configure vim/kakoune
+- terminal apps
+

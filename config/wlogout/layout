@@ -1,0 +1,32 @@
+{
+    "label" : "lock",
+    "action" : "swaylock -i ~/Pictures/wallpapers/nicepic-blurred.png",
+    "text" : "Lock",
+    "keybind" : "l",
+   "height": 1,
+   "width": 1
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Reboot",
+    "keybind" : "r",
+   "height": 1,
+   "width": 1
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Shutdown",
+    "keybind" : "s",
+   "height": 1,
+   "width": 1
+}
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit 0",
+    "text" : "Logout",
+    "keybind" : "e",
+   "height": 1,
+   "width": 1
+}

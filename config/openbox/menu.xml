@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:openbox_menu xmlns:ns0="https://openbox.org/" xmlns:ns1="https://www.w3.org/2001/XMLSchema-instance" ns1:schemaLocation="https://openbox.org/">
+  <ns0:menu id="root-menu" label="Applications">
+    <ns0:item label="File Manager">
+      <ns0:action name="Execute">
+        <ns0:command>~/.config/openbox/scripts/exec.sh nautilus</ns0:command>
+      </ns0:action>
+    </ns0:item>
+    <item label="Geany editor">
+      <action name="Execute">
+        <execute>~/.config/openbox/scripts/exec.sh geany</execute>
+      </action>
+    </item>
+    <ns0:item label="Terminal">
+      <ns0:action name="Execute">
+        <ns0:command>urxvt</ns0:command>
+      </ns0:action>
+    </ns0:item>
+    <item label="Kitty terminal">
+      <action name="Execute">
+        <execute>~/.config/openbox/scripts/exec.sh kitty</execute>
+      </action>
+    </item>
+    <ns0:item label="Web Browser">
+      <ns0:action name="Execute">
+        <ns0:command>~/.config/openbox/scripts/exec.sh waterfox</ns0:command>
+      </ns0:action>
+    </ns0:item>
+    <ns0:item label="Run command">
+      <ns0:action name="Execute">
+        <ns0:command>~/.config/openbox/scripts/exec.sh gmrun</ns0:command>
+      </ns0:action>
+    </ns0:item>
+    <separator />
+    <separator />
+    <separator />
+    <menu id="menu-3015860" label="Restart to">
+      <item label="BlackBox">
+        <action name="Execute">
+          <execute>~/.config/openbox/scripts/restart-to.sh blackbox</execute>
+        </action>
+      </item>
+      <item label="FVWM">
+        <action name="Execute">
+          <execute>~/.config/openbox/scripts/restart-to.sh fvwm3</execute>
+        </action>
+      </item>
+      <item label="Xorg">
+        <action name="Execute">
+          <execute>pkill openbox</execute>
+        </action>
+      </item>
+      <item label="Enlightenment">
+        <action name="Execute">
+          <execute>~/.config/openbox/scripts/restart-to.sh enlightenment_start</execute>
+        </action>
+      </item>
+      <item label="TWM">
+        <action name="Execute">
+          <execute>~/.config/openbox/scripts/restart-to.sh twm</execute>
+        </action>
+      </item>
+    </menu>
+    <item label="Reload walpaper">
+      <action name="Execute">
+        <execute>nitrogen --restore</execute>
+      </action>
+    </item>
+    <item label="OBmenu2">
+      <action name="Execute">
+        <execute>~/.config/openbox/scripts/exec.sh obmenu</execute>
+      </action>
+    </item>
+    <ns0:item label="Lock">
+      <ns0:action name="Execute">
+        <ns0:command>xscreensaver-command -lock</ns0:command>
+      </ns0:action>
+    </ns0:item>
+    <ns0:item label="Exit">
+      <ns0:action name="Exit" />
+    </ns0:item>
+  </ns0:menu>
+</ns0:openbox_menu>
